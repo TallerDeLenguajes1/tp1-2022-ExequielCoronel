@@ -12,9 +12,9 @@ namespace TPN1_Punto2
                 num = Convert.ToInt32(Console.ReadLine());
                 System.Console.WriteLine($"El cuadrado de {num} es {num*num}");
             }catch(FormatException){
-                System.Console.WriteLine("Error: se supero el tamaño que soporta el tipo de dato entero.");
+                System.Console.WriteLine("Error: se ingreso un tipo de dato no esperado.");
             }catch(OverflowException){
-                System.Console.WriteLine("Error: el numero ingresado supera el tamaño soportado por el tipo de dato entero.");
+                System.Console.WriteLine("Error: se supero el tamaño que soporta el tipo de dato entero.");
             }catch(Exception e){
                 System.Console.WriteLine($"Error:{e.Message}");
             } 
